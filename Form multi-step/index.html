@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="progress">
+        <div class="progress-container" data-progress="">
+            <div class="cube" >1</div>
+            <div class="bar" data-bar></div>
+            <div class="cube" data-cube>2</div>
+            <div class="bar" data-bar></div>
+            <div class="cube" data-cube>3</div>
+        </div>
+    </div>
+    <form data-multi-step class="multi-step-form">
+        <div class="card " data-step>
+            <div class="titre">
+                <h3 class="step-title">CREATE YOUR ACCOUNT</h3>
+                <h5 class="step-title">This is step 1</h5>
+            </div>
+            <div class="entree">
+                <div class="form-group">
+                    <!-- <label for="email">Email</label> -->
+                    <input type="email" required name="email" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <!-- <label for="password">Password</label> -->
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <!-- <label for="confirmPassword">Confirm Password</label> -->
+                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
+                </div>
+                <p>Le mot de passe et la confirmation ne match pas</p>
+            </div>
+            <div class="btn">
+                <div class="btn-container">
+                    <button data-next>Next</button>
+                </div>
+            </div>
+                
+          
+        </div>
+
+        <div class="card  " data-step>
+            <div class="titre">
+                <h3 class="step-title">SOCIAL PROFILES</h3>
+                <h5 class="step-title">Your presence on the social network</h5>
+            </div>
+            <div class="entree">
+                <div class="form-group">
+                    <!-- <label for="adresse">Adresse</label> -->
+                    <input type="text" name="adresse" id="adresse" placeholder="Adresse">
+                </div>
+                <div class="form-group">
+                    <!-- <label for="city">City</label> -->
+                    <input type="text" name="city" id="city" placeholder="City">
+                </div>
+                <div class="form-group">
+                    <!-- <label for="zipcode">Zip Code</label> -->
+                    <input type="text" name="zipcode" id="zipcode" placeholder="Zip Code">
+                </div>
+            </div>
+            <div class="btn">
+                <div class="btn-container">
+                    <button data-previous>Previous</button>
+                </div>
+                <div class="btn-container">
+                    <button data-next>Next</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="card " data-step>
+            <div class="titre">
+                <h3 class="step-title">PERSONAL DETAILS</h3>
+                <h5 class="step-title">We will never sell it</h5>
+            </div>
+            <div class="entree">
+
+                <div class="form-group">
+                    <!-- <label for="first-name">First Name</label> -->
+                    <input type="text" name="first-name" id="first-name" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                    <!-- <label for="last-name">Last Name</label> -->
+                    <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+                </div>
+                <div class="form-group">
+                    <!-- <label for="last-name">Last Name</label> -->
+                    <input type="text" name="phone" id="phone" placeholder="Phone">
+                </div>
+                <div class="form-group">
+                    <!-- <label for="last-name">Last Name</label> -->
+                    <input type="text" name="dress" id="adress" placeholder="Adress">
+                </div>
+            </div>
+            <div class="btn">
+                <div class="btn-container">
+                    <button data-previous>Previous</button>
+                </div>
+                <div class="btn-container">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+            </div>
+        </form>
+
+    <script src="./index.js"></script>
+</body>
+</html>

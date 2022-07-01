@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body main {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .horloge {
+  width: 400px;
+  height: 400px;
+  background: #474747;
+}
+
+body main .horloge .cadran {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: black;
+}
+
+body main .horloge .centre {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 2;
+  opacity: 0.2;
+}
+
+body main .horloge .aiguille {
+  position: absolute;
+  width: 5px;
+}
+
+body main .horloge .sec {
+  height: 45%;
+  left: 50%;
+  top: 25%;
+  background: red;
+}
+
+body main .horloge .min {
+  height: 35%;
+  left: 50%;
+  top: 30%;
+  background: #009723;
+}
+
+body main .horloge .houre {
+  height: 30%;
+  left: 50%;
+  top: 35%;
+  background: #003cff;
+}
+/*# sourceMappingURL=style.css.map */

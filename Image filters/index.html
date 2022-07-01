@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+        <div class="left">
+            <h1>Image filter</h1>
+            <div class="color-filter-div">
+                <h3>Image</h3>
+                <div class="grayscale-div">
+                    <input type="range" id="grayscale">
+                    <label for="grayscale">grayscale</label>
+                </div>
+                <div class="contrast-div">
+                    <input type="range" id="contrast">
+                    <label for="contrast">contrast</label>
+                </div>
+            </div>
+            <div class="shadow-filter-div">
+                <h3>shadow</h3>
+                <div class="spacing-div">
+                    <input type="range" id="spacing">
+                    <label for="spacing">spacing</label>
+                </div>
+                <div class="blur-div">
+                    <input type="range" id="blur">
+                    <label for="blur">blur</label>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <input type="text" id="src-img" placeholder="Placer le chemin de votre image">
+            <img src="" alt="">
+        </div>
+    </main>
+
+    <script src="./index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffbe00), color-stop(80%, #f6c9ff));
+  background: linear-gradient(180deg, #ffbe00 0%, #f6c9ff 80%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.progress {
+  width: 50%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.progress .progress-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.progress .progress-container .bar {
+  width: 35%;
+  height: 5px;
+  background: white;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, white), color-stop(50%, #2eb26c)) right;
+  background: linear-gradient(to left, white 50%, #2eb26c 50%) right;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+  background-size: 200% 100%;
+}
+
+.progress .progress-container .prog.bar {
+  -webkit-box-shadow: rgba(42, 209, 30, 0.695) 0px 3px 8px;
+          box-shadow: rgba(42, 209, 30, 0.695) 0px 3px 8px;
+  background-position: left;
+}
+
+.progress .progress-container .cube {
+  width: 30px;
+  height: 30px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+
+.progress .progress-container .cube:first-child {
+  -webkit-box-shadow: rgba(42, 209, 30, 0.695) 0px 3px 8px;
+          box-shadow: rgba(42, 209, 30, 0.695) 0px 3px 8px;
+  color: white;
+  background: #2eb26c;
+}
+
+.progress .progress-container .prog.cube {
+  -webkit-box-shadow: rgba(42, 209, 30, 0.695) 0px 3px 8px;
+          box-shadow: rgba(42, 209, 30, 0.695) 0px 3px 8px;
+  color: white;
+  background: #2eb26c;
+}
+
+.multi-step-form {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.multi-step-form .card {
+  padding: 0 50px;
+  background: white;
+  border-radius: 4px;
+  width: 40%;
+  font-size: 1.3em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.426) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.426) 0px 3px 8px;
+  -webkit-transform: translateX(0) scale(0);
+          transform: translateX(0) scale(0);
+  position: absolute;
+  height: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.multi-step-form .card .titre {
+  height: 100px;
+}
+
+.multi-step-form .card .titre h3 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+.multi-step-form .card .titre h5 {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-weight: 200;
+}
+
+.multi-step-form .card .entree {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.multi-step-form .card .entree .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: .25em;
+  margin-top: 15px;
+}
+
+.multi-step-form .card .entree .form-group input {
+  border: 1.5px solid rgba(0, 0, 0, 0.187);
+  border-radius: 4px;
+  padding: 15px;
+  font-size: 1em;
+  outline: none;
+  background: white;
+  font-weight: 300;
+}
+
+.multi-step-form .card .entree .form-group input:focus {
+  background: white;
+}
+
+.multi-step-form .card p {
+  opacity: 0;
+  font-weight: 200;
+  font-size: 0.8em;
+  text-align: left;
+  color: red;
+}
+
+.multi-step-form .card .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+.multi-step-form .card .btn .btn-container {
+  border: 2px solid transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3px;
+  border-radius: 4px;
+  -webkit-transition: 0.1s ease;
+  transition: 0.1s ease;
+  margin-bottom: 20px;
+}
+
+.multi-step-form .card .btn .btn-container button {
+  font-size: 1em;
+  border: transparent;
+  background: #2eb26c;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  width: 160px;
+  cursor: pointer;
+}
+
+.multi-step-form .card .btn .btn-container:hover {
+  border: 2px solid #2eb26c;
+}
+
+.multi-step-form .active {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-transform: translateX(0) scale(1);
+          transform: translateX(0) scale(1);
+  opacity: 1;
+  position: static;
+}
+/*# sourceMappingURL=style.css.map */

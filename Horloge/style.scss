@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    main{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+
+        .horloge{
+            width: 400px;
+            height: 400px;
+            background: rgb(71, 71, 71);
+            .cadran{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: black;
+
+            }
+            .centre{
+
+                width: 30px;
+                height: 30px;
+                background: rgb(255, 255, 255);
+                border-radius: 50%;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                position: absolute;                
+                z-index: 2;
+                opacity: 0.2;
+            }
+            .aiguille{
+                position: absolute;
+                width: 5px;
+            }
+            .sec{
+                height: 45%; 
+                left: 50%;
+                top: 25%;
+                background: red;
+            }
+            .min{
+                height: 35%;
+                left: 50%;
+                top: 30%;
+                background: rgb(0, 151, 35);
+            }
+            .houre{
+                height: 30%;
+                left: 50%;
+                top: 35%;
+                background: rgb(0, 60, 255);
+            }
+        }
+
+    }
+}
